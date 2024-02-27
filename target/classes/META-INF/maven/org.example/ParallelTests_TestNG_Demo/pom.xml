@@ -162,7 +162,11 @@
 				<configuration>
 					<parallel>methods</parallel>
 					<useUnlimitedThreads>true</useUnlimitedThreads>
+					<suiteXmlFiles>
+						<suiteXmlFile>testng.xml</suiteXmlFile>
+					</suiteXmlFiles>
 				</configuration>
+
 			</plugin>
 
 			<plugin>
