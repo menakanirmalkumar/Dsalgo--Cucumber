@@ -10,9 +10,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 
-@CucumberOptions(tags = "", features = "src/test/resources/features", glue = "stepDefinitions",
-        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
-       "pretty","io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"})
+@CucumberOptions(tags = "", features = "src/test/resources/features", glue = "stepDefinitions", plugin = {
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber/cucumber.json",
+		"html:target/cucumber-html-report", "pretty", "html:target/HtmlReports.html" })
 public class CucumberRunner  extends AbstractTestNGCucumberTests {
 
    @Override
