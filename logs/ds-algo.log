@@ -1,0 +1,12 @@
+[INFO ] 2024-02-27 20:23:48.345 [main] LogTest - Test For log
+[INFO ] 2024-02-27 20:36:58.495 [main] LogTest - Test For log
+[INFO ] 2024-02-27 20:47:45.793 [TestNG-PoolService-2] ArrayPageDefinitions - array Page title :--Array
+[INFO ] 2024-02-27 20:47:45.823 [TestNG-PoolService-0] ArrayPageDefinitions - array Page title :--Array
+[INFO ] 2024-02-27 20:47:45.921 [TestNG-PoolService-1] ArrayPageDefinitions - array Page title :--Array
+[INFO ] 2024-02-27 20:47:45.834 [TestNG-PoolService-6] ArrayPageDefinitions - array Page title :--Array
+[INFO ] 2024-02-27 20:47:45.844 [TestNG-PoolService-3] ArrayPageDefinitions - array Page title :--Array
+[INFO ] 2024-02-27 20:47:45.793 [TestNG-PoolService-5] ArrayPageDefinitions - array Page title :--Array
+[INFO ] 2024-02-27 20:47:46.921 [TestNG-PoolService-7] ArrayPageDefinitions - array Page title :--Array
+[INFO ] 2024-02-27 20:47:46.973 [TestNG-PoolService-5] ArrayPageDefinitions -  Arrays in Python page title :--Arrays in Python
+[INFO ] 2024-02-27 20:47:47.123 [TestNG-PoolService-0] ArrayPageDefinitions -  Arrays in Python page title :--Arrays in Python
+[INFO ] 2024-02-27 20:47:47.123 [TestNG-PoolService-1] ArrayPageDefinitions -  Arrays in Python page title :--Arrays in Python

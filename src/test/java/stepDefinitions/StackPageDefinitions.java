@@ -1,6 +1,11 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.Given;
+import java.io.IOException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.HomePage;
@@ -9,19 +14,15 @@ import pageObjects.SignInPage;
 import pageObjects.StackPage;
 import utils.TestSetUp;
 
-import org.testng.Assert;
-import org.testng.log4testng.Logger;
-
-import java.io.IOException;
 
 public class StackPageDefinitions {
+	private static Logger log = LogManager.getLogger(StackPageDefinitions.class);
 
 	TestSetUp setUp;
 	public PageObjectManager pageObjectManager;
 	public HomePage homePage;
 	public SignInPage SgnPage;
 	public StackPage StackPg;
-	static Logger log = Logger.getLogger(StackPageDefinitions.class);
 
 	public StackPageDefinitions(TestSetUp setUp) throws IOException {
 		this.setUp = setUp;

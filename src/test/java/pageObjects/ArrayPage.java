@@ -1,6 +1,7 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -9,9 +10,8 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 
-import utils.BaseTest;
-
 public class ArrayPage {
+	private static Logger log = LogManager.getLogger(ArrayPage.class);
 
 	public WebDriver driver;
 
@@ -114,6 +114,7 @@ public class ArrayPage {
 	}
 	public String searchAndMaxErrorMessage() {
 		return searchAndMaxErrorMessage.getText();
+		
 	}
 	public void userGetErrormessage() {
 		Assert.assertTrue("Error occurred during submission".equals(searchAndMaxErrorMessage()));

@@ -1,22 +1,20 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
-import pageObjects.GraphPage;
-import pageObjects.HomePage;
-import pageObjects.LinkedListPage;
-import pageObjects.PageObjectManager;
-import pageObjects.SignInPage;
-import pageObjects.StackPage;
-import pageObjects.TreePage;
-import utils.TestSetUp;
-
-import org.testng.Assert;
-
 import java.io.IOException;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import pageObjects.LinkedListPage;
+import pageObjects.PageObjectManager;
+import utils.TestSetUp;
+
+
 public class LinkedListPageDefinitions {
+	private static Logger log = LogManager.getLogger(LinkedListPageDefinitions.class);
 
 	TestSetUp setUp;
 	public PageObjectManager pageObjectManager;

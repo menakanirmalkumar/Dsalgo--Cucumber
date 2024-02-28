@@ -78,7 +78,7 @@ public class BaseTest {
 	public WebDriver WebDriverManager() throws IOException {
 
 		FileInputStream fis = new FileInputStream(
-				System.getProperty("user.dir") + "//src//test//resources//global.properties");
+				System.getProperty("user.dir") + "/src/test/resources/global.properties");
 		Properties prop = new Properties();
 		prop.load(fis);
 		url = prop.getProperty("QAUrl");
@@ -145,7 +145,7 @@ public class BaseTest {
 		String browser = ConfigReader.getBrowserType();
 //		String browser = "Chrome";
 		if (driver == null) {
-			WebDriverManager.chromedriver().clearDriverCache().setup();
+			//WebDriverManager.chromedriver().clearDriverCache().setup();
 			if (browser.equalsIgnoreCase("chrome")) {
 				ChromeOptions opt = new ChromeOptions();
 				opt.addArguments("headless");

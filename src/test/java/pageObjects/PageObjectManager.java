@@ -3,12 +3,8 @@ package pageObjects;
 import org.openqa.selenium.WebDriver;
 
 
-
-
-
 public class PageObjectManager {
 
-  
     public HomePage homePage;
     public SignInPage SgnPage;
     public RegisterPage RegPage;
