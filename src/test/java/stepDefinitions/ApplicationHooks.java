@@ -1,22 +1,23 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
+import java.io.IOException;
 
-import io.cucumber.java.AfterStep;
-import io.cucumber.java.Scenario;
-import utils.TestSetUp;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+import io.cucumber.java.After;
+import io.cucumber.java.AfterStep;
+import io.cucumber.java.Scenario;
+import utils.TestSetUp;
 
-import java.io.IOException;
 
 public class ApplicationHooks {
+	private static Logger log = LogManager.getLogger(ApplicationHooks.class);
 
- public TestSetUp setUp;
-
+	public TestSetUp setUp;
  	
 
     public ApplicationHooks(TestSetUp setUp) {
@@ -35,6 +36,7 @@ public class ApplicationHooks {
         if(scenario.isFailed()) {
             final byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
             scenario.attach(screenshot, "image/png", "image");
+            log.info("Screen shot taken");
         }
 
     }

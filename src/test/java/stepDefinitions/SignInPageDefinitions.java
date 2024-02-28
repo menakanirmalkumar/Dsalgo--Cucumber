@@ -1,6 +1,5 @@
 package stepDefinitions;
 
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,12 +8,16 @@ import pageObjects.PageObjectManager;
 import pageObjects.SignInPage;
 import utils.TestSetUp;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.testng.Assert;
 
 
 import java.io.IOException;
 
-public class SignInPageDefinitions{
+
+public class SignInPageDefinitions {
+	private static Logger log = LogManager.getLogger(SignInPageDefinitions.class);
 
     TestSetUp setUp;
     public PageObjectManager pageObjectManager;

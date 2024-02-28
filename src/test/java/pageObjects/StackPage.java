@@ -1,6 +1,7 @@
 package pageObjects;
 
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -9,6 +10,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 public class StackPage {
+	private static Logger log = LogManager.getLogger(StackPage.class);
 
 	public WebDriver driver;
 

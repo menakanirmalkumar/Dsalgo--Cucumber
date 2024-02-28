@@ -1,6 +1,11 @@
 package stepDefinitions;
 
-import io.cucumber.java.en.Given;
+import java.io.IOException;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+import org.testng.Assert;
+
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pageObjects.ArrayPage;
@@ -10,11 +15,8 @@ import pageObjects.SignInPage;
 import pageObjects.StackPage;
 import utils.TestSetUp;
 
-import org.testng.Assert;
-
-import java.io.IOException;
-
 public class ArrayPageDefinitions {
+	private static Logger log = LogManager.getLogger(ArrayPageDefinitions.class);
 
 	TestSetUp setUp;
 	public PageObjectManager pageObjectManager;
@@ -35,6 +37,7 @@ public class ArrayPageDefinitions {
 		arrayPage.clickGetStartedArrayBtn();
 		String GetCurrentWindowTitle = setUp.baseTest.WebDriverManager().getTitle();
 		Assert.assertEquals(setUp.baseTest.titleArray, GetCurrentWindowTitle);
+		log.info("array Page title :--" + GetCurrentWindowTitle);
 	}
 
 	@Then("the user navigate to Arrays in Python page")
@@ -42,6 +45,7 @@ public class ArrayPageDefinitions {
 		arrayPage.clickOnArrayInPythonLink();
 		String GetCurrentWindowTitle = setUp.baseTest.WebDriverManager().getTitle();
 		Assert.assertEquals(setUp.baseTest.titleArraysInpython, GetCurrentWindowTitle);
+		log.info(" Arrays in Python page title :--" + GetCurrentWindowTitle);
 	}
 
 	@Then("the user navigate to Arrays Using List page")
