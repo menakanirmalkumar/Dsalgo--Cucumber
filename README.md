@@ -41,5 +41,5 @@ public Object[][] scenarios() {
 
 4. TestNG Report will be generated in ***target->surefire-report*** folder
 
-5. Extent Report will be generated in folder ***ExtentReports->SparkReport_DD_MMM_YY->Reports->Spark.html***
+5. Extent Report will be generated in folder ***ExtentReports->SparkReport_DD_MMM_YY->Reports->ExtentReport.html***
 
