@@ -11,7 +11,7 @@ import org.testng.annotations.Parameters;
 
 
 @CucumberOptions(tags = "", features = "src/test/resources/features", glue = "stepDefinitions", plugin = {
-		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/CucumberTestReport.json",
+		"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:", "json:target/cucumber-reports/cucumber.json",
 		"html:target/CucumberTestReport.html",})
 public class CucumberRunner  extends AbstractTestNGCucumberTests {
 

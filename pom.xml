@@ -199,7 +199,7 @@
 						<configuration>
 							<projectName>DsAlgoCucumberProject</projectName>
 							<outputDirectory>
-								${project.build.directory}/cucumber-report-html</outputDirectory>
+								${project.build.directory}/cucumber-reports</outputDirectory>
 							<inputDirectory>${project.build.directory}</inputDirectory>
 							<jsonFiles>
 								<param>**/*.json</param>
