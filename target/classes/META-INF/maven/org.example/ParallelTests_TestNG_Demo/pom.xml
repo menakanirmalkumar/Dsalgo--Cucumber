@@ -200,7 +200,8 @@
 							<projectName>DsAlgoCucumberProject</projectName>
 							<outputDirectory>
 								${project.build.directory}/cucumber-reports</outputDirectory>
-							<inputDirectory>${project.build.directory}</inputDirectory>
+							<inputDirectory>${project.build.directory}/cucumber</inputDirectory>
+							<checkBuildResult>false</checkBuildResult>
 							<jsonFiles>
 								<param>**/*.json</param>
 							</jsonFiles>
